@@ -1,0 +1,11 @@
+# Variables and Data Types: Variable Declaration and Type
+
+# Question:
+# Declare a variable 'pi' and assign the value 3.14 to it.
+# Print the value of 'pi' along with its data type.
+
+# Declare variable pi
+pi = 3.14
+
+# Print value and data type
+print("Value of pi:", pi, "| Type:", type(pi))
