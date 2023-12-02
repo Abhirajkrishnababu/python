@@ -1,0 +1,14 @@
+# Variables and Data Types: Variable Declaration and Type
+
+# Question:
+# Declare two variables, age and name.
+# Assign your age and name to them.
+# Print their values along with their data types.
+
+# Declare variables age and name
+your_name = "Your Name"
+your_age = 25
+
+# Print values and data types
+print("Name:", your_name, "| Type:", type(your_name))
+print("Age:", your_age, "| Type:", type(your_age))
