@@ -1,0 +1,11 @@
+# Variables and Data Types: Variable Declaration and Type
+
+# Question:
+# Declare a variable 'course_name' and assign the value "Python Programming" to it.
+# Print the value of 'course_name' along with its data type.
+
+# Declare variable course_name
+course_name = "Python Programming"
+
+# Print value and data type
+print("Course Name:", course_name, "| Type:", type(course_name))
