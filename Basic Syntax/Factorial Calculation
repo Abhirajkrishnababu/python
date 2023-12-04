@@ -1,0 +1,14 @@
+# Complex Math: Factorial Calculation
+# Question:
+# Calculate the factorial of a given number. Take the number as input from the user.
+
+# Answer:
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+number = int(input("Enter a number: "))
+result = factorial(number)
+print("Factorial of", number, "is:", result)
