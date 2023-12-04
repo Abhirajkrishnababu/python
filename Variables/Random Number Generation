@@ -1,0 +1,11 @@
+# Variables: Random Number Generation
+# Question:
+# Generate a random number between a specified range. Take the range as input from the user.
+
+# Answer:
+import random
+
+lower_limit = int(input("Enter the lower limit: "))
+upper_limit = int(input("Enter the upper limit: "))
+random_number = random.randint(lower_limit, upper_limit)
+print("Random Number:", random_number)
