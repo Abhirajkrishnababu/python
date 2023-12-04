@@ -1,0 +1,14 @@
+# Simple if
+# Question:
+# Determine the type of angle based on its measure.
+# Print "Acute", "Right", or "Obtuse" accordingly.
+
+# Answer:
+angle_measure = float(input("Enter the measure of the angle: "))
+
+if 0 < angle_measure < 90:
+    print("Acute")
+elif angle_measure == 90:
+    print("Right")
+else:
+    print("Obtuse")
