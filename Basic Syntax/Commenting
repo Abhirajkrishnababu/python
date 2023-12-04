@@ -1,0 +1,10 @@
+# Basic Syntax: Commenting
+# Question:
+# Write a comment explaining the purpose of the following code.
+
+# Answer:
+# This code calculates the area of a rectangle using the formula: area = length * width.
+length = 8
+width = 4
+area = length * width
+print("Area of the rectangle:", area)
