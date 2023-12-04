@@ -1,0 +1,14 @@
+# Real-Life Problem: Population Growth
+# Question:
+# Estimate the future population based on the current population, growth rate, and time.
+# Take these values as input from the user.
+
+# Answer:
+current_population = float(input("Enter the current population: "))
+growth_rate = float(input("Enter the annual growth rate (in percentage): "))
+time_years = float(input("Enter the time period in years: "))
+
+# Convert growth rate to decimal and calculate future population
+growth_rate_decimal = growth_rate / 100
+future_population = current_population * (1 + growth_rate_decimal)**time_years
+print("Estimated Future Population:", future_population)
