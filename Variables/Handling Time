@@ -1,0 +1,16 @@
+# Variables: Handling Time
+# Question:
+# Record the time taken to execute a particular code block.
+
+# Answer:
+import time
+
+start_time = time.time()
+
+# Code block to measure time
+for _ in range(1000000):
+    pass
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print("Time taken:", elapsed_time, "seconds")
