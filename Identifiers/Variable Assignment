@@ -1,0 +1,15 @@
+# Identifiers: Variable Assignment
+# Question:
+# Assign values to the variables based on the following code and print their values:
+# a) a_variable
+# b) anotherVariable
+# c) snake_case_variable
+
+# Answer:
+a_variable = 42
+anotherVariable = "Hello"
+snake_case_variable = [1, 2, 3]
+
+print("a) Value of a_variable:", a_variable)
+print("b) Value of anotherVariable:", anotherVariable)
+print("c) Value of snake_case_variable:", snake_case_variable)
