@@ -1,0 +1,15 @@
+# Complex Math: Euclidean Algorithm for GCD
+# Question:
+# Implement the Euclidean algorithm to find the Greatest Common Divisor (GCD) of two numbers.
+# Take the two numbers as input from the user.
+
+# Answer:
+def euclidean_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+result_gcd = euclidean_gcd(num1, num2)
+print("GCD of", num1, "and", num2, "is:", result_gcd)
