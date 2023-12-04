@@ -1,0 +1,9 @@
+# Variables: String Concatenation
+# Question:
+# Concatenate two strings 'str1' and 'str2' and print the result.
+
+# Answer:
+str1 = "Hello"
+str2 = "World"
+result_string = str1 + " " + str2
+print("Concatenated String:", result_string)
