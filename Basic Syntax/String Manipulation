@@ -1,0 +1,9 @@
+# Basic Syntax: String Manipulation
+# Question:
+# Concatenate two strings and print the result.
+
+# Answer:
+string1 = "Hello"
+string2 = "World"
+result_string = string1 + " " + string2
+print("Concatenated String:", result_string)
