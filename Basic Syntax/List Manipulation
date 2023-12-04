@@ -1,0 +1,8 @@
+# Basic Syntax: 
+# Question:
+# Create a list of colors and print each color on a new line.
+
+# Answer:
+colors = ["Red", "Green", "Blue", "Yellow"]
+for color in colors:
+    print(color)
