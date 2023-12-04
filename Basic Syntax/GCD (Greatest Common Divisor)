@@ -1,0 +1,14 @@
+# Complex Math: GCD (Greatest Common Divisor)
+# Question:
+# Find the GCD of two numbers. Take the numbers as input from the user.
+
+# Answer:
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+result_gcd = gcd(num1, num2)
+print("GCD of", num1, "and", num2, "is:", result_gcd)
