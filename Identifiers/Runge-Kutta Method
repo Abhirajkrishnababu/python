@@ -1,0 +1,30 @@
+# Complex Math: Runge-Kutta Method
+# Question:
+# Implement the Runge-Kutta method to solve a first-order ordinary differential equation (ODE).
+# Take the ODE, initial value, step size, and number of steps as input from the user.
+
+# Answer:
+def runge_kutta_method(ode_func, y0, h, num_steps):
+    results = [y0]
+    y = y0
+
+    for _ in range(num_steps):
+        k1 = h * ode_func(y)
+        k2 = h * ode_func(y + 0.5 * k1)
+        k3 = h * ode_func(y + 0.5 * k2)
+        k4 = h * ode_func(y + k3)
+
+        y = y + (k1 + 2*k2 + 2*k3 + k4) / 6
+        results.append(y)
+
+    return results
+
+# Example ODE: dy/dx = x + y
+def example_ode(x):
+    return x + x**2
+
+initial_value_rk = float(input("Enter the initial value for Runge-Kutta method: "))
+step_size_rk = float(input("Enter the step size for Runge-Kutta method: "))
+num_steps_rk = int(input("Enter the number of steps for Runge-Kutta method: "))
+result_runge_kutta = runge_kutta_method(example_ode, initial_value_rk, step_size_rk, num_steps_rk)
+print("Approximate solution using Runge-Kutta method:", result_runge_kutta)
