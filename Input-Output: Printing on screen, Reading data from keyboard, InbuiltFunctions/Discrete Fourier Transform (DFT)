@@ -1,0 +1,18 @@
+# Complex Math: Discrete Fourier Transform (DFT)
+# Question:
+# Implement the Discrete Fourier Transform (DFT) for a given sequence.
+# Take the sequence as input from the user.
+
+# Answer:
+import numpy as np
+
+def discrete_fourier_transform(sequence):
+    N = len(sequence)
+    n = np.arange(N)
+    k = n.reshape((N, 1))
+    omega = np.exp(-2j * np.pi * k * n / N)
+    result = np.dot(omega, sequence)
+    return result
+
+# Example sequence: [1, 2, 3, 4]
+sequence_dft = np.array([1
