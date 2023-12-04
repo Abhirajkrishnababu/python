@@ -1,0 +1,14 @@
+# Variables: Nested Dictionaries
+# Question:
+# Create a nested dictionary representing information about students.
+# Print the names of students along with their grades.
+
+# Answer:
+students_info = {
+    'John': {'grade': 'A', 'age': 20},
+    'Alice': {'grade': 'B', 'age': 22},
+    'Bob': {'grade': 'C', 'age': 21}
+}
+
+for student, info in students_info.items():
+    print("Student:", student, "| Grade:", info['grade'])
