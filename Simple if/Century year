@@ -1,0 +1,11 @@
+# Simple if
+# Question:
+# Check if a given year is a century year. Print "Century year" if it is, otherwise print "Not a century year".
+
+# Answer:
+year_century_check = int(input("Enter a year: "))
+
+if year_century_check % 100 == 0:
+    print("Century year")
+else:
+    print("Not a century year")
