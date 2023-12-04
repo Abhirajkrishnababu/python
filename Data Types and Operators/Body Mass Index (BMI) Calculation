@@ -1,0 +1,12 @@
+# Real-Life Problem: Body Mass Index (BMI) Calculation
+# Question:
+# Calculate the Body Mass Index (BMI) based on the weight and height of a person.
+# Take these values as input from the user.
+
+# Answer:
+weight_person = float(input("Enter the weight of the person (in kilograms): "))
+height_person = float(input("Enter the height of the person (in meters): "))
+
+# Calculate BMI using the formula: BMI = weight / (height^2)
+bmi_person = weight_person / (height_person**2)
+print("Body Mass Index (BMI):", bmi_person)
