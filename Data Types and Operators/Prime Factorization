@@ -1,0 +1,18 @@
+# Complex Math: Prime Factorization
+# Question:
+# Find and print the prime factorization of a given number. Take the number as input from the user.
+
+# Answer:
+def prime_factorization(number):
+    factors = []
+    divisor = 2
+    while number > 1:
+        while number % divisor == 0:
+            factors.append(divisor)
+            number //= divisor
+        divisor += 1
+    return factors
+
+num_to_factorize = int(input("Enter a number to find its prime factorization: "))
+result_prime_factors = prime_factorization(num_to_factorize)
+print("Prime Factorization of", num_to_factorize, "is:", result_prime_factors)
