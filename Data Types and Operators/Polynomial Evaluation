@@ -1,0 +1,16 @@
+# Complex Math: Polynomial Evaluation
+# Question:
+# Evaluate a polynomial for a given value of 'x'. Take the coefficients and 'x' as input from the user.
+
+# Answer:
+def evaluate_polynomial(coefficients, x):
+    result = 0
+    for i, coef in enumerate(coefficients):
+        result += coef * (x ** i)
+    return result
+
+degree = int(input("Enter the degree of the polynomial: "))
+coefficients_poly = [float(input(f"Enter coefficient for x^{i}: ")) for i in range(degree+1)]
+x_value = float(input("Enter the value of 'x': "))
+result_evaluation = evaluate_polynomial(coefficients_poly, x_value)
+print(f"Result of the polynomial for x={x_value}:", result_evaluation)
