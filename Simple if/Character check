@@ -1,0 +1,14 @@
+# Simple if
+# Question:
+# Determine the type of a given character (alphabet, digit, or special character).
+# Print "Alphabet", "Digit", or "Special character" accordingly.
+
+# Answer:
+character_type_check = input("Enter a character: ")
+
+if character_type_check.isalpha():
+    print("Alphabet")
+elif character_type_check.isdigit():
+    print("Digit")
+else:
+    print("Special character")
