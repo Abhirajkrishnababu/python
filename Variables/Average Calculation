@@ -1,0 +1,10 @@
+# Variables: Average Calculation
+# Question:
+# Calculate the average of three variables 'x', 'y', and 'z'. Take their values as input from the user.
+
+# Answer:
+x = float(input("Enter the value of x: "))
+y = float(input("Enter the value of y: "))
+z = float(input("Enter the value of z: "))
+average = (x + y + z) / 3
+print("Average:", average)
