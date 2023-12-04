@@ -1,0 +1,10 @@
+# Complex Math: Matrix Determinant Calculation
+# Question:
+# Calculate the determinant of a 3x3 matrix. Take the matrix as input from the user.
+
+# Answer:
+import numpy as np
+
+matrix_3x3 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+determinant_value = np.linalg.det(matrix_3x3)
+print("Determinant of the 3x3 matrix:", determinant_value)
