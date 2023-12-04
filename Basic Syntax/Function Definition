@@ -1,0 +1,11 @@
+# Basic Syntax: 
+# Question:
+# Define a function 'multiply' that takes two parameters and returns their product.
+# Call the function with arguments 4 and 6 and print the result.
+
+# Answer:
+def multiply(a, b):
+    return a * b
+
+result = multiply(4, 6)
+print("Result of multiplication:", result)
