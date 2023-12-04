@@ -1,0 +1,11 @@
+# Variables: Increment and Decrement
+# Question:
+# Implement an increment and decrement operation on a variable 'counter'.
+
+# Answer:
+counter = 0
+counter += 1  # Increment
+print("After increment:", counter)
+
+counter -= 1  # Decrement
+print("After decrement:", counter)
