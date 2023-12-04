@@ -1,0 +1,8 @@
+# Variables: Using Enumerate
+# Question:
+# Iterate over a list of cities and print both the city and its index.
+
+# Answer:
+cities = ["New York", "London", "Tokyo", "Paris"]
+for index, city in enumerate(cities):
+    print("Index:", index, "| City:", city)
