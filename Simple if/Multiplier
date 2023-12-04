@@ -1,0 +1,11 @@
+# Simple if
+# Question:
+# Check if a given number is a multiple of both 5 and 7. Print "Multiple of 5 and 7" if it is, otherwise print "Not a multiple".
+
+# Answer:
+number_multiple_check = int(input("Enter a number: "))
+
+if number_multiple_check % 5 == 0 and number_multiple_check % 7 == 0:
+    print("Multiple of 5 and 7")
+else:
+    print("Not a multiple")
