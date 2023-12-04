@@ -1,0 +1,10 @@
+# Simple if
+# Question:
+# Check if a given number is a perfect square. Print "Perfect square" if it is, otherwise print "Not a perfect square".
+
+# Answer:
+number_perfect_square = int(input("Enter a number: "))
+if number_perfect_square > 0 and (number_perfect_square**0.5).is_integer():
+    print("Perfect square")
+else:
+    print("Not a perfect square")
