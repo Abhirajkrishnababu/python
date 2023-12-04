@@ -1,0 +1,15 @@
+# Variables: Shopping Cart
+# Question:
+# Create a shopping cart to keep track of items and their quantities.
+# Add items to the cart, update quantities, and print the final cart.
+
+# Answer:
+shopping_cart = {'apple': 3, 'banana': 2, 'orange': 4}
+print("Initial Shopping Cart:", shopping_cart)
+
+# Update quantities
+shopping_cart['apple'] += 2
+shopping_cart['banana'] = 3
+shopping_cart['grape'] = 1  # Add a new item
+
+print("Final Shopping Cart:", shopping_cart)
