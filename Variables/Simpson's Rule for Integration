@@ -1,0 +1,24 @@
+# Complex Math: Simpson's Rule for Integration
+# Question:
+# Implement Simpson's rule to approximate the definite integral of a function over an interval.
+# Take the function, lower limit, upper limit, and number of intervals as input from the user.
+
+# Answer:
+def simpsons_rule_integration(func, a, b, n):
+    h = (b - a) / n
+    result = func(a) + func(b)
+    for i in range(1, n, 2):
+        result += 4 * func(a + i * h)
+    for i in range(2, n-1, 2):
+        result += 2 * func(a + i * h)
+    return (h / 3) * result
+
+# Example function: f(x) = x^2
+def example_function(x):
+    return x**2
+
+lower_limit_integration = float(input("Enter the lower limit for integration: "))
+upper_limit_integration = float(input("Enter the upper limit for integration: "))
+intervals_integration = int(input("Enter the number of intervals for integration: "))
+result_integration = simpsons_rule_integration(example_function, lower_limit_integration, upper_limit_integration, intervals_integration)
+print("
