@@ -1,0 +1,14 @@
+# Complex Math: Trigonometric Function Calculation
+# Question:
+# Calculate the sine and cosine of an angle in degrees. Take the angle as input from the user.
+
+# Answer:
+import math
+
+angle_degrees = float(input("Enter an angle in degrees: "))
+angle_radians = math.radians(angle_degrees)
+sin_value = math.sin(angle_radians)
+cos_value = math.cos(angle_radians)
+
+print("Sine:", sin_value)
+print("Cosine:", cos_value)
