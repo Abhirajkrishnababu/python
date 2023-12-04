@@ -1,0 +1,9 @@
+ # Variables: 
+# Question:
+# Swap the values of two variables 'a' and 'b' without using a temporary variable.
+
+# Answer:
+a = 5
+b = 10
+a, b = b, a
+print("After swapping: a =", a, "| b =", b)
