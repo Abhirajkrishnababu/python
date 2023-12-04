@@ -1,0 +1,14 @@
+# Real-Life Problem: Currency Exchange
+# Question:
+# Convert an amount from one currency to another based on the exchange rate.
+# Take the amount, initial currency, target currency, and exchange rate as input from the user.
+
+# Answer:
+amount = float(input("Enter the amount to convert: "))
+initial_currency = input("Enter the initial currency code (e.g., USD): ").upper()
+target_currency = input("Enter the target currency code (e.g., EUR): ").upper()
+exchange_rate = float(input("Enter the exchange rate: "))
+
+# Convert currency using the formula: converted_amount = amount * exchange_rate
+converted_amount = amount * exchange_rate
+print(f"{amount} {initial_currency} is equal to {converted_amount} {target_currency}")
