@@ -1,0 +1,11 @@
+# Complex Math: Binomial Coefficient Calculation
+# Question:
+# Calculate the binomial coefficient C(n, k). Take the values of n and k as input from the user.
+
+# Answer:
+import math
+
+n_value = int(input("Enter the value of n: "))
+k_value = int(input("Enter the value of k: "))
+result_binomial_coeff = math.comb(n_value, k_value)
+print("Binomial Coefficient C({}, {}) is: {}".format(n_value, k_value, result_binomial_coeff))
