@@ -1,0 +1,11 @@
+# Variables: Boolean Variable
+# Question:
+# Create a boolean variable 'is_student' and assign the value True to it.
+# Check if the person is a student and print the result.
+
+# Answer:
+is_student = True
+if is_student:
+    print("The person is a student.")
+else:
+    print("The person is not a student.")
