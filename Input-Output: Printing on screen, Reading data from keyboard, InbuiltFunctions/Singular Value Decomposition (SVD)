@@ -1,0 +1,19 @@
+# Complex Math: Singular Value Decomposition (SVD)
+# Question:
+# Implement Singular Value Decomposition (SVD) for a given matrix.
+# Take the matrix as input from the user.
+
+# Answer:
+import numpy as np
+
+def singular_value_decomposition(matrix):
+    u, s, vh = np.linalg.svd(matrix)
+    return u, s, vh
+
+# Example matrix: [[1, 2], [3, 4]]
+matrix_svd = np.array([[1, 2], [3, 4]])
+result_svd = singular_value_decomposition(matrix_svd)
+print("Singular Value Decomposition of the matrix:")
+print("U:", result_svd[0])
+print("Singular Values:", result_svd[1])
+print("Vh (Hermitian of V):", result_svd[2])
