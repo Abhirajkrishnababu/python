@@ -1,0 +1,11 @@
+# Complex Math: Sum of Digits
+# Question:
+# Calculate the sum of the digits of a given number. Take the number as input from the user.
+
+# Answer:
+def sum_of_digits(number):
+    return sum(map(int, str(number)))
+
+num_to_sum = int(input("Enter a number: "))
+result_sum = sum_of_digits(num_to_sum)
+print("Sum of digits in", num_to_sum, "is:", result_sum)
