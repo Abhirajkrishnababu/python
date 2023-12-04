@@ -1,0 +1,9 @@
+# Complex Math: Power of a Number
+# Question:
+# Calculate the power of a number. Take the base and exponent as input from the user.
+
+# Answer:
+base = float(input("Enter the base: "))
+exponent = int(input("Enter the exponent: "))
+result_power = base ** exponent
+print(base, "raised to the power of", exponent, "is:", result_power)
