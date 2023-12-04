@@ -1,0 +1,14 @@
+# Real-Life Problem: Projected Earnings
+# Question:
+# Calculate the projected earnings for an investment based on the initial investment, annual return, and time.
+# Take these values as input from the user.
+
+# Answer:
+initial_investment = float(input("Enter the initial investment: "))
+annual_return_rate = float(input("Enter the annual return rate (in percentage): "))
+investment_time_years = float(input("Enter the investment time period in years: "))
+
+# Convert annual return rate to decimal and calculate projected earnings
+annual_return_decimal = annual_return_rate / 100
+projected_earnings = initial_investment * (1 + annual_return_decimal)**investment_time_years - initial_investment
+print("Projected Earnings:", projected_earnings)
