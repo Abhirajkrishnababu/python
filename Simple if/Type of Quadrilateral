@@ -1,0 +1,22 @@
+# Simple if
+# Question:
+# Determine the type of a given quadrilateral based on its angles.
+# Print "Rectangle", "Square", "Rhombus", or "Parallelogram" accordingly.
+
+# Answer:
+angleA = float(input("Enter the measure of angle A: "))
+angleB = float(input("Enter the measure of angle B: "))
+angleC = float(input("Enter the measure of angle C: "))
+angleD = float(input("Enter the measure of angle D: "))
+
+if angleA == angleC and angleB == angleD:
+    if angleA == 90 and angleB == 90:
+        print("Rectangle")
+    elif angleA == angleB:
+        print("Square")
+    elif angleA == angleB == angleC == angleD:
+        print("Rhombus")
+    else:
+        print("Parallelogram")
+else:
+    print("Invalid quadrilateral")
