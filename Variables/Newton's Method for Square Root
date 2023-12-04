@@ -1,0 +1,15 @@
+# Complex Math: Newton's Method for Square Root
+# Question:
+# Implement Newton's method to approximate the square root of a given positive number.
+# Take the positive number as input from the user.
+
+# Answer:
+def newton_square_root_approximation(number):
+    guess = number / 2  # Initial guess
+    while abs(guess * guess - number) > 1e-6:
+        guess = 0.5 * (guess + number / guess)
+    return guess
+
+positive_number = float(input("Enter a positive number: "))
+result_square_root = newton_square_root_approximation(positive_number)
+print("Approximate Square Root:", result_square_root)
