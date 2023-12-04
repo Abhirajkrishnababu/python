@@ -1,0 +1,20 @@
+# Complex Math: Quadratic Equation
+# Question:
+# Solve the quadratic equation: ax^2 + bx + c = 0. Take coefficients a, b, and c as input from the user.
+
+# Answer:
+import cmath
+
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+# Calculate the discriminant
+discriminant = cmath.sqrt(b**2 - 4*a*c)
+
+# Calculate the solutions
+root1 = (-b + discriminant) / (2*a)
+root2 = (-b - discriminant) / (2*a)
+
+print("Root 1:", root1)
+print("Root 2:", root2)
