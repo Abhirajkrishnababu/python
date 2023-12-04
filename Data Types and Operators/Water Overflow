@@ -1,0 +1,18 @@
+# Real-Life Problem: Water Overflow
+# Question:
+# Determine if a water tank will overflow based on its dimensions and current water level.
+# Take the dimensions, current water level, and tank capacity as input from the user.
+
+# Answer:
+tank_length = float(input("Enter the length of the tank: "))
+tank_width = float(input("Enter the width of the tank: "))
+tank_height = float(input("Enter the height of the tank: "))
+current_water_level = float(input("Enter the current water level: "))
+tank_capacity = float(input("Enter the tank capacity: "))
+
+# Calculate the volume of water in the tank
+current_water_volume = tank_length * tank_width * current_water_level
+
+# Check if the tank will overflow
+is_overflow = current_water_volume > tank_capacity
+print("Will the tank overflow?", is_overflow)
