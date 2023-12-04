@@ -1,0 +1,11 @@
+# Input-Output: Printing on Screen
+# Question:
+# Print the following pattern on the screen:
+# 1
+# 22
+# 333
+# 4444
+
+# Answer:
+for i in range(1, 5):
+    print(str(i) * i)
