@@ -1,0 +1,15 @@
+# Simple if
+# Question:
+# Check if a given number is a prime number. Print "Prime" if it is, otherwise print "Not a prime number".
+
+# Answer:
+number_prime_check = int(input("Enter a number: "))
+if number_prime_check > 1:
+    for i in range(2, int(number_prime_check**0.5) + 1):
+        if number_prime_check % i == 0:
+            print("Not a prime number")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not a prime number")
