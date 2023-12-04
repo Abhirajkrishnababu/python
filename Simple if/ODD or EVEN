@@ -1,0 +1,10 @@
+# Simple if
+# Question:
+# Check if a given number is even. Print "Even" if it is, otherwise print "Odd".
+
+# Answer:
+number_even_check = int(input("Enter a number: "))
+if number_even_check % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
