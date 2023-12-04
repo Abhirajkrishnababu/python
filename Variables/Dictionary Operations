@@ -1,0 +1,11 @@
+# Variables: Dictionary Operations
+# Question:
+# Update the value of a specific key in a dictionary and print the updated dictionary.
+
+# Answer:
+employee_info = {'name': 'Alice', 'age': 25, 'position': 'Engineer'}
+print("Original Employee Info:", employee_info)
+
+# Update value for 'age'
+employee_info['age'] = 26
+print("Updated Employee Info:", employee_info)
